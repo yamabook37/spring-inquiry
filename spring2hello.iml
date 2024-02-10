@@ -64,7 +64,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.3.17" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.3.17" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.17" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: mysql:mysql-connector-java:8.0.28" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:2.6.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test:2.6.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test-autoconfigure:2.6.5" level="project" />
@@ -92,8 +91,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.vaadin.external.google:android-json:0.0.20131108.vaadin1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.3.17" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.8.4" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-cache:2.6.5" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context-support:5.3.17" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.13.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.2" level="project" />
