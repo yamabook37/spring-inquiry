@@ -1,13 +1,13 @@
-package com.udemy.spring2hello;
+package com.udemy.springtodo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Spring2helloApplication {
+public class SpringTodoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Spring2helloApplication.class, args);
+        SpringApplication.run(SpringTodoApplication.class, args);
     }
 
 }
