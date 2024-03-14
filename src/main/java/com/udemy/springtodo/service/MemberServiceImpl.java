@@ -5,6 +5,16 @@ import java.util.ArrayList;
 
 public class MemberServiceImpl implements MemberService {
 
+    // シングルトン: そのクラスのインスタンスが必ず1つであることを保証するデザインパターン
+    // 一度インスタンスを作成すると他は作成できなくなる
+    private static MemberServiceImpl singleton = new MemberServiceImpl();
+
+    private MemberServiceImpl() {};
+
+    public static MemberServiceImpl getInstance() {
+        return singleton;
+    }
+
     @Override
     public String greet(int i) {
         String[] greetings = {"Good morning", "Hello", "Good evening"};
