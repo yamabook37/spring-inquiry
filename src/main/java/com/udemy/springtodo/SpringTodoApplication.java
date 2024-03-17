@@ -2,14 +2,16 @@ package com.udemy.springtodo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
 public class SpringTodoApplication {
 
-    // jarを使用, 修正のたびにmaven packageしてあげる必要がある
-
     public static void main(String[] args) {
         SpringApplication.run(SpringTodoApplication.class, args);
     }
+
+    // https://kohei.life/spring-boot-build-deploy/
 
 }
