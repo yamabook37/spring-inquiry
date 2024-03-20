@@ -1,14 +1,7 @@
-package com.udemy.springtodo.controller;
+package com.udemy.springtodo.app;
 
-import com.udemy.springtodo.entity.Member;
-import com.udemy.springtodo.service.MemberServiceImpl;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.ArrayList;
 
 @Controller
 public class HelloController {

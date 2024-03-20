@@ -1,4 +1,4 @@
-package com.udemy.springtodo.controller;
+package com.udemy.springtodo.app;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -26,8 +26,6 @@ public class SampleController {
         String sql = "SELECT id, name, email "
                 + "FROM inquiry WHERE id = 1";
         Map<String, Object> map = jdbcTemplate.queryForMap(sql);
-        System.out.println(map.get("name"));
-        System.out.println(map.get("email"));
 
         model.addAttribute("title", "Inquiry Form");
         model.addAttribute("name", map.get("name"));
