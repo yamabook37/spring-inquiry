@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 @ControllerAdvice
 public class WebMvcControllerAdvice {
 
-    //送信されたから文字をあらかじめnullに変換する
+    //送信された空文字をあらかじめnullに変換する
     public void initBinder(WebDataBinder dataBinder) {
         dataBinder.registerCustomEditor(String.class, new StringTrimmerEditor(true));
     }
