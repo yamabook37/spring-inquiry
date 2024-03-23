@@ -1,7 +1,7 @@
-package com.udemy.springtodo.service;
+package com.udemy.springinquiry.service;
 
-import com.udemy.springtodo.dao.InquiryDao;
-import com.udemy.springtodo.entity.Inquiry;
+import com.udemy.springinquiry.dao.InquiryDao;
+import com.udemy.springinquiry.entity.Inquiry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

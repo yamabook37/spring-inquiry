@@ -1,6 +1,6 @@
-package com.udemy.springtodo.service;
+package com.udemy.springinquiry.service;
 
-import com.udemy.springtodo.entity.Inquiry;
+import com.udemy.springinquiry.entity.Inquiry;
 import java.util.List;
 
 public interface InquiryService {

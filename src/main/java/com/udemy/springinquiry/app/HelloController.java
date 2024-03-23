@@ -1,4 +1,4 @@
-package com.udemy.springtodo.app;
+package com.udemy.springinquiry.app;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

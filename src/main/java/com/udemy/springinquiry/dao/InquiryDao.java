@@ -1,6 +1,6 @@
-package com.udemy.springtodo.dao;
+package com.udemy.springinquiry.dao;
 
-import com.udemy.springtodo.entity.Inquiry;
+import com.udemy.springinquiry.entity.Inquiry;
 import java.util.List;
 
 public interface InquiryDao {

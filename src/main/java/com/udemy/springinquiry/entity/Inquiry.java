@@ -1,4 +1,4 @@
-package com.udemy.springtodo.entity;
+package com.udemy.springinquiry.entity;
 
 import java.time.LocalDateTime;
 

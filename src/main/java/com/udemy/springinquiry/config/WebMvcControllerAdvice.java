@@ -1,6 +1,6 @@
-package com.udemy.springtodo.config;
+package com.udemy.springinquiry.config;
 
-import com.udemy.springtodo.service.InquiryNotFoundException;
+import com.udemy.springinquiry.service.InquiryNotFoundException;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.ui.Model;

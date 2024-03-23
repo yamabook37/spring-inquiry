@@ -1,8 +1,7 @@
-package com.udemy.springtodo.app.inquiry;
+package com.udemy.springinquiry.app.inquiry;
 
-import com.udemy.springtodo.entity.Inquiry;
-import com.udemy.springtodo.service.InquiryNotFoundException;
-import com.udemy.springtodo.service.InquiryService;
+import com.udemy.springinquiry.entity.Inquiry;
+import com.udemy.springinquiry.service.InquiryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,6 +1,6 @@
-package com.udemy.springtodo.service;
+package com.udemy.springinquiry.service;
 
-import com.udemy.springtodo.entity.Member;
+import com.udemy.springinquiry.entity.Member;
 import java.util.ArrayList;
 
 public interface MemberService {

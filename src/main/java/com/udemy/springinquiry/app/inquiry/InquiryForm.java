@@ -1,4 +1,4 @@
-package com.udemy.springtodo.app.inquiry;
+package com.udemy.springinquiry.app.inquiry;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;

@@ -1,4 +1,4 @@
-package com.udemy.springtodo.entity;
+package com.udemy.springinquiry.entity;
 
 public class Member {
 

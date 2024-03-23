@@ -1,4 +1,4 @@
-package com.udemy.springtodo.service;
+package com.udemy.springinquiry.service;
 
 public class InquiryNotFoundException extends RuntimeException {
 
