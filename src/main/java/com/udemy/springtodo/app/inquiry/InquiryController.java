@@ -30,13 +30,13 @@ public class InquiryController {
                        Model model,
                        @ModelAttribute("complete") String complete) {
         model.addAttribute("title", "Inquiry Form");
-        return "inquiry/form";
+        return "inquiry/form_boot";
     }
 
     @PostMapping("/form")
     public String formGoBack(InquiryForm inquiryForm, Model model) {
         model.addAttribute("title", "Inquiry Form");
-        return "inquiry/form";
+        return "inquiry/form_boot";
     }
 
     @PostMapping("/confirm")
@@ -45,10 +45,10 @@ public class InquiryController {
                           Model model) {
         if(result.hasErrors()) {
             model.addAttribute("title", "Inquiry Form");
-            return "inquiry/form";
+            return "inquiry/form_boot";
         }
         model.addAttribute("title", "Confirm Page");
-        return "inquiry/confirm";
+        return "inquiry/confirm_boot";
     }
 
     @PostMapping("/complete")
@@ -58,7 +58,7 @@ public class InquiryController {
                           RedirectAttributes redirectAttributes) {
         if(result.hasErrors()) {
             model.addAttribute("title", "Inquiry Form");
-            return "inquiry/form";
+            return "inquiry/form_boot";
         }
         // save to database
         Inquiry inquiry = new Inquiry();
@@ -77,11 +77,12 @@ public class InquiryController {
     public String index(Model model) {
         List<Inquiry> list = inquiryService.getAll();
 
-        Inquiry inquiry = new Inquiry();
-        inquiry.setId(4);
-        inquiry.setName("Taro");
-        inquiry.setEmail("taro@example.com");
-        inquiry.setContents("sample");
+//        例外を発生させるテスト
+//        Inquiry inquiry = new Inquiry();
+//        inquiry.setId(4);
+//        inquiry.setName("Taro");
+//        inquiry.setEmail("taro@example.com");
+//        inquiry.setContents("sample");
 
 //        try {
 //            inquiryService.update(inquiry);
@@ -92,7 +93,7 @@ public class InquiryController {
 
         model.addAttribute("inquiryList", list);
         model.addAttribute("title", "Inquiry Index");
-        return "inquiry/index";
+        return "inquiry/index_boot";
     }
 
 //    controller内のメソッドで発生した例外をキャッチする, 1つのcontrollerのみ ->共通処理はControllerAdviceに記述する
