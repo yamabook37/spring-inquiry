@@ -1,16 +1,14 @@
 package com.udemy.springtodo.app.inquiry;
 
 import com.udemy.springtodo.entity.Inquiry;
+import com.udemy.springtodo.service.InquiryNotFoundException;
 import com.udemy.springtodo.service.InquiryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.time.LocalDateTime;
@@ -79,8 +77,29 @@ public class InquiryController {
     public String index(Model model) {
         List<Inquiry> list = inquiryService.getAll();
 
+        Inquiry inquiry = new Inquiry();
+        inquiry.setId(4);
+        inquiry.setName("Taro");
+        inquiry.setEmail("taro@example.com");
+        inquiry.setContents("sample");
+
+//        try {
+//            inquiryService.update(inquiry);
+//        } catch (InquiryNotFoundException e) {
+//            model.addAttribute("message", e);
+//            return "error/CustomPage";
+//        }
+
         model.addAttribute("inquiryList", list);
         model.addAttribute("title", "Inquiry Index");
         return "inquiry/index";
     }
+
+//    controller内のメソッドで発生した例外をキャッチする, 1つのcontrollerのみ ->共通処理はControllerAdviceに記述する
+//    @ExceptionHandler(InquiryNotFoundException.class)
+//    public String handleException(InquiryNotFoundException e, Model model) {
+//        model.addAttribute("message", e);
+//        return "error/CustomPage";
+//    }
+
 }
